@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="HelloSpring" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="standard" />
+          <element id="library" level="project" name="jstl" />
+          <element id="library" level="project" name="aopalliance-1.0" />
+        </element>
       </element>
     </root>
   </artifact>
