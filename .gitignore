@@ -13,4 +13,8 @@ Desktop.ini
 ._.DS_Store
 
 composer.lock
-/.idea
+/.idea/*
+/target/*.war
+/target/hello-spring/*
+/target/maven-archiver/*
+/target/maven-status/*
