@@ -18,3 +18,4 @@ composer.lock
 /target/hello-spring/*
 /target/maven-archiver/*
 /target/maven-status/*
+/target/classes/*
