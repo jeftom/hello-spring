@@ -44,9 +44,10 @@ public class HelloController {
     public String printHello(ModelMap model) {
 	    try {
 		    BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-		    String pass = "hello";
+		    String pass = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 		    String hashPass = passwordEncoder.encode(pass);
-		    System.out.println(hashPass);
+		    System.out.println("short" + hashPass);
+		    System.out.println("long" + passwordEncoder.encode("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab"));
 		    boolean isMatch = passwordEncoder.matches("admin", "$2a$10$Bvedj8KIU23gw15JKwVrwOm2Vdm04fl2g8GIznm4JpBFt0tttFnYS");
 		    System.out.println(isMatch);
 	    } catch (Exception e) {
@@ -55,6 +56,7 @@ public class HelloController {
 
         model.addAttribute("msg", "Spring MVC Hello World");
         model.addAttribute("name", "yuntao");
+
         return "hello";
     }
 }
